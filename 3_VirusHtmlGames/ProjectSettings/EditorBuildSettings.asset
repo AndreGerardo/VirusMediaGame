@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/9_Product2Basket.unity
-    guid: 62336098850d655498d63d0dacb19dbd
+    path: Assets/Scenes/10_SpinTheWheel.unity
+    guid: 56b6f09e6f8e92f418992cf8d0522bdd
   m_configObjects: {}

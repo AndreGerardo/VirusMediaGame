@@ -5,7 +5,7 @@ public class CatchGameScript : MonoBehaviour
 {
     [Header("UI Reference")]
     [SerializeField] private TMP_Text remainingSnackText;
-    [SerializeField] private RectTransform logoUI, mainMenuUI, gameUI;
+    [SerializeField] private RectTransform logoUI, mainMenuUI, gameUI, remainingTextUI;
     [SerializeField] private RectTransform[] endCardUI;
     private Camera cam;
     
@@ -67,6 +67,7 @@ public class CatchGameScript : MonoBehaviour
             .setEase(easeType);
         LeanTween.moveY(boxObj, -4.26f, 1f)
             .setEase(easeType);
+        
         LeanTween.moveY(gameUI, 0f, 1f)
             .setEase(easeType)
             .setOnComplete(()=>isPlaying = true);
