@@ -67,4 +67,9 @@ public class GameScript : MonoBehaviour
         currentTool = toolID;
     }
 
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
+    }
+
 }

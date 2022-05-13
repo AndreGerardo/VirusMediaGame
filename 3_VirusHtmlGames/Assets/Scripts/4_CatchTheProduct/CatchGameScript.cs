@@ -42,7 +42,7 @@ public class CatchGameScript : MonoBehaviour
 
             if(Input.touchCount > 0)
             {
-                screenMouspos = Input.GetTouch(0).position;
+                screenMouspos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
             }
 
             boxObj.transform.position = new Vector3(screenMouspos.x, boxObj.transform.position.y, boxObj.transform.position.z);
@@ -100,5 +100,10 @@ public class CatchGameScript : MonoBehaviour
         GameObject obj = (GameObject) Instantiate(snacks[rnd]);
         obj.transform.position = SpawnerObj.transform.position + new Vector3(rndPos,0,0);
         obj.transform.rotation = Quaternion.identity;
+    }
+
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
     }
 }

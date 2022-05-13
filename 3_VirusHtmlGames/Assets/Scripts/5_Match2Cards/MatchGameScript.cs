@@ -140,4 +140,9 @@ public class MatchGameScript : MonoBehaviour
         }
     }
 
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
+    }
+
 }

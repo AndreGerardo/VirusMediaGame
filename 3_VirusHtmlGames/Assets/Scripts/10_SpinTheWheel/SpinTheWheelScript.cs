@@ -76,4 +76,9 @@ public class SpinTheWheelScript : MonoBehaviour
             .setEase(easeType)
             .setDelay(1f);
     }
+
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
+    }
 }

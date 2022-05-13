@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Snack
   - Enemy
+  - Plate
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - No Player Collide
+  - Fluids
   - 
   - 
   - 

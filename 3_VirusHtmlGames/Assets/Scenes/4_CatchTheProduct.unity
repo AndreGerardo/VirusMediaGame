@@ -1004,6 +1004,7 @@ MonoBehaviour:
   logoUI: {fileID: 368501965}
   mainMenuUI: {fileID: 1815793256}
   gameUI: {fileID: 979240332}
+  remainingTextUI: {fileID: 0}
   endCardUI:
   - {fileID: 1480503176}
   - {fileID: 1967741766}
@@ -1329,7 +1330,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1967741768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608315107}
+        m_TargetAssemblyTypeName: CatchGameScript, CatchProduct
+        m_MethodName: OpenWebPage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://virus.co.id
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1967741768
 MonoBehaviour:
   m_ObjectHideFlags: 0

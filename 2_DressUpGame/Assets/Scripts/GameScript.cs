@@ -86,4 +86,9 @@ public class GameScript : MonoBehaviour
                 .setDelay(endCardTime);
     }
 
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
+    }
+
 }

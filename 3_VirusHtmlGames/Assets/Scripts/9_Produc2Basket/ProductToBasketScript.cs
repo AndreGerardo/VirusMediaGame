@@ -70,4 +70,9 @@ public class ProductToBasketScript : MonoBehaviour
             .setDelay(2f);
     }
 
+    public void OpenWebPage(string webPage)
+    {
+        Application.OpenURL(webPage);
+    }
+
 }
